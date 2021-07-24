@@ -20,6 +20,7 @@ const without = function(arr, valuesToRemove) {
 //   });
 //   console.log(newArr);
 // }
+// this was a refactor that I went through with a mentor.  I thought it best just to use my version
 
 const eqArrays = function(arr1, arr2) {
 
