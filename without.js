@@ -1,13 +1,13 @@
-const without = function (arr, valuesToRemove) {
+const without = function(arr, valuesToRemove) {
   let newArr = [];
 
-  arr.forEach((element1) => {
+  arr.forEach(() => {
     valuesToRemove.forEach((element2) => {
-      newArr = arr.filter(element1 => element1 !== element2)
+      newArr = arr.filter(element1 => element1 !== element2);
     });
   });
-  return newArr
-}
+  return newArr;
+};
 
 // function without(arr, valuesToRemove) {
 //   const valuesToRemoveSet = new Set(valuesToRemove);
@@ -37,12 +37,12 @@ const eqArrays = function(arr1, arr2) {
 const assertArraysEqual = function(arr1, arr2) {
 
   if (!eqArrays(arr1, arr2)) {
-    console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`)
-      return false;
-      }
-    console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-    return true
-}
+    console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
+    return false;
+  }
+  console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
+  return true;
+};
 
-assertArraysEqual(without([1, 2, 3], [1]), [2, 3])
-assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"])
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
