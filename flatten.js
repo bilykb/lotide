@@ -1,0 +1,60 @@
+const flat = function(arr) {
+  if (!Array.isArray(arr)) {
+    return false;
+  }
+  return arr.flat();
+};
+
+const flatten = function(arr) {
+  let newArr = [];
+  if (!Array.isArray(arr)) {
+    return false;
+  }
+  arr.forEach((element) => {
+    newArr = newArr.concat(element);
+  });
+  return newArr;
+};
+
+
+const flatter = function(arr) {
+  let newArr = [];
+  if (!Array.isArray(arr)) {
+    return false;
+  }
+  arr.forEach((element) => {
+    if (Array.isArray(element)) {
+      element.forEach((innerElement) => {
+        newArr.push(innerElement);
+      });
+    } else {
+      newArr.push(element);
+    }
+  });
+  return newArr;
+};
+
+const eqArrays = function(arr1, arr2) {
+
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  for (let index = 0; index < arr1.length; index++) {
+    if (arr1[index] !== arr2[index]) {
+      return false;
+    }
+  }
+  return true;
+};
+
+const assertArraysEqual = function(arr1, arr2) {
+
+  if (!eqArrays(arr1, arr2)) {
+    console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
+    return false;
+  }
+  console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
+  return true;
+};
+
+assertArraysEqual(flatter([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);

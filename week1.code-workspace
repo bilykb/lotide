@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../kata"
+		},
+		{
+			"path": "../d1-focal"
+		},
+		{
+			"path": "../d2-focal"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../lighthouse-js-fundamentals"
+		},
+		{
+			"path": "../../lighthouse-web-notes"
+		}
+	],
+	"settings": {}
+}
