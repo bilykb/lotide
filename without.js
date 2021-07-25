@@ -1,7 +1,7 @@
 /**
  * without.js is a function that accepts two arrays: the source array, and an "itemsToRemove" array.  It returns a new array with the items removed.
- * @param {arr} arr 
- * @param {arr} itemsToRemove 
+ * @param {arr} arr
+ * @param {arr} itemsToRemove
  * @returns {arr}
  */
 
