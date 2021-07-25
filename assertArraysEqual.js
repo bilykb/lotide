@@ -1,3 +1,11 @@
+/**
+ * assertArraysEqual.js uses aqArrays.js to compare two arrays for an exact match, console.log's an Assertion
+ * @param {array} arr1 
+ * @param {array} arr2 
+ * Console.log(Assertion pass or fail)
+ */
+
+
 const eqArrays = function(arr1, arr2) {
 
   if (arr1.length !== arr2.length) {
@@ -10,6 +18,7 @@ const eqArrays = function(arr1, arr2) {
   }
   return true;
 };
+
 
 const assertArraysEqual = function(arr1, arr2) {
 
