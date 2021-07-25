@@ -1,3 +1,9 @@
+/**
+ * flatten.js is a function that takes a nested array with one level of nesting, and returns a single "flattened" array
+ * @param {Array} arr 
+ * @returns {Array}
+ */
+
 const flatten = function(arr) {
   let newArr = [];
   if (!Array.isArray(arr)) {
