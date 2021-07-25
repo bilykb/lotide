@@ -1,7 +1,7 @@
 /**
  * assertArraysEqual.js uses aqArrays.js to compare two arrays for an exact match, console.log's an Assertion
- * @param {array} arr1 
- * @param {array} arr2 
+ * @param {array} arr1
+ * @param {array} arr2
  * Console.log(Assertion pass or fail)
  */
 
