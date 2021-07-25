@@ -1,4 +1,8 @@
-// FUNCTION IMPLEMENTATION
+const tail = function(array) {
+  const newArray = array.slice(1);
+  return newArray;
+};
+
 const assertEqual = function(actual, expected) {
   if (JSON.stringify(actual) === JSON.stringify(expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -7,10 +11,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const tail = function(array) {
-  const newArray = array.slice(1);
-  return newArray;
-};
+
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
