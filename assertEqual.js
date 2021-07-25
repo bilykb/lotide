@@ -1,7 +1,7 @@
 /**
  * Function that compares two primitive data types -actual and expected- console logs whether the assertion passed
- * @param {primitive data type} actual 
- * @param {primitive data type} expected 
+ * @param {primitive data type} actual
+ * @param {primitive data type} expected
  */
 
 const assertEqual = function(actual, expected) {
