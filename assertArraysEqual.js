@@ -1,5 +1,5 @@
 /**
- * assertArraysEqual.js uses aqArrays.js to compare two arrays for an exact match, console.log's an Assertion
+ * a function which utilizes aqArrays.js to compare two arrays for an exact match, then prints to console a pass or fail assertion
  * @param {array} arr1
  * @param {array} arr2
  * Console.log(Assertion pass or fail)
