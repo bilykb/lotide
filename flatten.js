@@ -1,6 +1,6 @@
 /**
  * flatten.js is a function that takes a nested array with one level of nesting, and returns a single "flattened" array
- * @param {Array} arr 
+ * @param {Array} arr
  * @returns {Array}
  */
 
@@ -36,4 +36,6 @@ const assertArraysEqual = function(arr1, arr2) {
   console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
 };
 
-assertArraysEqual(flatter([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+assertArraysEqual(flatten(["1", "2", ["3", "4"], "5", ["6"]]), ["1", "2", "3", "4", "5", "6"]);
+assertArraysEqual(flatten([]), []);
