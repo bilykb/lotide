@@ -1,7 +1,7 @@
 /**
  * eqArrays compares two arrays to determine if they are similar in elements and length
- * @param {array} arr1 
- * @param {array} arr2 
+ * @param {array} arr1
+ * @param {array} arr2
  * @return {boolean}
  */
 
