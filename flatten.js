@@ -10,7 +10,11 @@ const flatten = function(arr) {
     return false;
   }
   arr.forEach((element) => {
-    newArr = newArr.concat(element);
+    if (Array.isArray(element)) {
+      newArr = newArr.concat(element);
+    } else {
+      newArr.push(element);
+    }
   });
   return newArr;
 };
