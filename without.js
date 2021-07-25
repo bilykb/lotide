@@ -1,26 +1,20 @@
-const without = function(arr, valuesToRemove) {
+/**
+ * without.js is a function that accepts two arrays: the source array, and an "itemsToRemove" array.  It returns a new array with the items removed.
+ * @param {arr} arr 
+ * @param {arr} itemsToRemove 
+ * @returns {arr}
+ */
+
+const without = function(arr, itemsToRemove) {
   let newArr = [];
 
   arr.forEach(() => {
-    valuesToRemove.forEach((element2) => {
+    itemsToRemove.forEach((element2) => {
       newArr = arr.filter(element1 => element1 !== element2);
     });
   });
   return newArr;
 };
-
-// function without(arr, valuesToRemove) {
-//   const valuesToRemoveSet = new Set(valuesToRemove);
-//   let newArr = [];
-
-//   arr.forEach((element1) => {
-//     if (!valuesToRemoveSet.has(element1)) {  // not going to remove
-//       newArr.push(element1);
-//     }
-//   });
-//   console.log(newArr);
-// }
-// this was a refactor that I went through with a mentor.  I thought it best just to use my version
 
 const eqArrays = function(arr1, arr2) {
 
