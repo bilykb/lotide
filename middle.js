@@ -12,10 +12,10 @@ const middle = function(arr) {
   }
   if (arr.length % 2 === 0) {
     return newArr.splice((arr.length / 2) - 1,  2);
-    // takes the length of array, subtracts 1 to get the index, then divides by 2
+    // takes the length of the array, divides by 2, and subtracts 1 to find the index.
   }
   return newArr.splice(Math.ceil((arr.length / 2) - 1), 1);
-  // takes the length of the array, subtracts 1, then divides by 2.  Math.ceil is used to change the decimal into an integer
+  // takes the length of the array, divides by 2, and subtracts 1 to find the index.  Math.ceil is used to change the decimal into an integer
 };
 
 
