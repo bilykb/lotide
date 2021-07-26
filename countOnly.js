@@ -5,18 +5,18 @@
  */
 
 const countOnly = function(allItems, itemsToCount) {
-  const tallyObject = {};
+  const results = {};
 
-    for (const item of allItems){
-      if (itemsToCount[item]) {
-        if (tallyObject[item]) {
-          tallyObject[item]++
-        } else {
-          tallyObject[item] = 1;
-        }
+  for (const item of allItems) {
+    if (itemsToCount[item]) {
+      if (results[item]) {
+        results[item]++;
+      } else {
+        results[item] = 1;
       }
     }
-  return tallyObject
+  }
+  return results;
 };
 
 const assertEqual = function(actual, expected) {
