@@ -1,3 +1,22 @@
+/**
+ * A function that accepts an array, and returns the middle index value (or values if the array has an even number of elements)
+ * @param {*} arr 
+ * @returns new Arr
+ */
+
+const middle = function(arr) {
+  let newArr = [];
+  
+  if (arr.length < 3) {
+    return newArr
+  }
+  if (arr.length % 2 === 0) {
+    newArr = arr.splice(arr[(arr.length / 2) - 2],  2);
+  } else {
+    newArr = arr.splice(arr[(Math.ceil(arr.length / 2) - 2)], 1);
+  }
+  return newArr
+};
 
 const eqArrays = function(arr1, arr2) {
   
@@ -21,19 +40,6 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-const middle = function(arr) {
-  let newArr = [];
-  
-  if (arr.length < 3) {
-    return newArr
-  }
-  if (arr.length % 2 === 0) {
-    newArr = arr.splice(arr[(arr.length / 2) - 2],  2);
-  } else {
-    newArr = arr.splice(arr[(Math.ceil(arr.length / 2) - 2)], 1);
-  }
-  return newArr
-};
 
 assertArraysEqual(middle([1]), []); // => []
 assertArraysEqual(middle([1, 2]), []); // => []
