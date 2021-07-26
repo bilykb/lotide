@@ -4,9 +4,20 @@
  * @param {object} itemstoCount an object specifying what to count
  */
 
-const countOnly = function(allItems, itemstoCount) {
+const countOnly = function(allItems, itemsToCount) {
+  const tallyObject = {};
 
-}
+    for (const item of allItems){
+      if (itemsToCount[item]) {
+        if (tallyObject[item]) {
+          tallyObject[item]++
+        } else {
+          tallyObject[item] = 1;
+        }
+      }
+    }
+  return tallyObject
+};
 
 const eqArrays = function(arr1, arr2) {
 
@@ -44,7 +55,6 @@ const firstNames = [
 ];
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-
 
 assertArraysEqual(result1["Jason"], 1);
 assertArraysEqual(result1["Karima"], undefined);
