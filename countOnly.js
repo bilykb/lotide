@@ -31,5 +31,22 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-assertArraysEqual([5, 6, 7], [1, 2, 3]); // false
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // true
+const firstNames = [
+  "Karl",
+  "Salima",
+  "Agouhanna",
+  "Fang",
+  "Kavith",
+  "Jason",
+  "Salima",
+  "Fang",
+  "Joe",
+];
+
+const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+
+
+assertArraysEqual(result1["Jason"], 1);
+assertArraysEqual(result1["Karima"], undefined);
+assertArraysEqual(result1["Fang"], 2);
+assertArraysEqual(result1["Agouhanna"], undefined);
