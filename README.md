@@ -14,7 +14,7 @@
 ## **Summary**
 ---
 
->This repository contains all the functions created over the course of the Lotide project.  Functions will be organized by the week of learning in which they were created, and referred to in order of creation.
+>This repository contains all the functions created over the course of the Lotide project while studying at [Lighthouse Labs](https://www.lighthouselabs.ca/). Functions will be organized by the week of learning in which they were created, and referred to in order of creation.
 
 ---
 ## **Table of Contents**
