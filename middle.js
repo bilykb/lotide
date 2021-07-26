@@ -1,18 +1,21 @@
 /**
- * A function that accepts an array, and returns the middle index value (or values if the array has an even number of elements)
- * @param {*} arr
- * @returns arr
+ * A function that accepts an array, and returns the middle index value(s) in a new array
+ * @param {arr} arr
+ * @returns newArr
  */
 
 const middle = function(arr) {
+  let newArr = arr;
   
   if (arr.length < 3) {
-    return arr = [];
+    return newArr = [];
   }
   if (arr.length % 2 === 0) {
-    return arr.splice((arr.length / 2) - 1,  2);
+    return newArr.splice((arr.length / 2) - 1,  2);
+    // takes the length of array, subtracts 1 to get the index, then divides by 2
   }
-  return arr.splice(Math.ceil((arr.length - 1) / 2), 1);
+  return newArr.splice(Math.ceil((arr.length / 2) - 1), 1);
+  // takes the length of the array, subtracts 1, then divides by 2.  Math.ceil is used to change the decimal into an integer
 };
 
 
