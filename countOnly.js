@@ -19,26 +19,11 @@ const countOnly = function(allItems, itemsToCount) {
   return tallyObject
 };
 
-const eqArrays = function(arr1, arr2) {
-
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let index = 0; index < arr1.length; index++) {
-    if (arr1[index] !== arr2[index]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-
-const assertArraysEqual = function(arr1, arr2) {
-
-  if (!eqArrays(arr1, arr2)) {
-    console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
@@ -56,7 +41,7 @@ const firstNames = [
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-assertArraysEqual(result1["Jason"], 1);
-assertArraysEqual(result1["Karima"], undefined);
-assertArraysEqual(result1["Fang"], 2);
-assertArraysEqual(result1["Agouhanna"], undefined);
+assertEqual(result1["Jason"], 1);
+assertEqual(result1["Karima"], undefined);
+assertEqual(result1["Fang"], 2);
+assertEqual(result1["Agouhanna"], undefined);
