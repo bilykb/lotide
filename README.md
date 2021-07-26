@@ -22,8 +22,8 @@
 
 | [Week 1 Functions](#week1) | [Week 2 Functions](#week2) | [Week 3 Functions](#week3) | [Week 4 Functions](#week4) |
 |--- | --- | --- | --- |
-| assertEqual.js | 1. middle.js |
-| head.js |
+| assertEqual.js | middle.js |
+| head.js | countOnly.js
 | tail.js |
 | eqArrays.js |
 | assertArraysEqual.js |
@@ -60,6 +60,9 @@
 
 [middle.js](https://github.com/bilykb/lotide/blob/master/middle.js)
  * A function that accepts an array, and returns the middle index value(s) in a new array
+
+[countOnly.js](https://github.com/bilykb/lotide/blob/master/countOnly.js)
+* a function that accepts an array of names, and an object of names you wish to make a tally of.  Returns a new object with a name count.
 
 ### <a name="week3">Week 3 Functions:</a>
 
