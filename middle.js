@@ -11,9 +11,9 @@ const middle = function(arr) {
     return newArr
   }
   if (arr.length % 2 === 0) {
-    newArr = arr.splice(arr[(arr.length / 2) - 2],  2);
+    newArr = arr.splice((arr.length / 2) - 1,  2);
   } else {
-    newArr = arr.splice(arr[(Math.ceil(arr.length / 2) - 2)], 1);
+    newArr = arr.splice(Math.ceil((arr.length - 1) / 2), 1);
   }
   return newArr
 };
@@ -41,9 +41,9 @@ const assertArraysEqual = function(arr1, arr2) {
 };
 
 
-assertArraysEqual(middle([1]), []); // => []
-assertArraysEqual(middle([1, 2]), []); // => []
-assertArraysEqual(middle([1, 2, 3]), [2]) // => [2]
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]) // => [3]
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]) // => [4]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]) // [3, 4]
+assertArraysEqual(middle([10]), []); // => []
+assertArraysEqual(middle([10, 20]), []); // => []
+assertArraysEqual(middle([10, 20, 30]), [20]) // => [20]
+assertArraysEqual(middle([10, 20, 30, 40, 50]), [30]) // => [30]
+assertArraysEqual(middle([10, 20, 30, 40]), [20, 30]) // => [20, 30]
+assertArraysEqual(middle([10, 20, 30, 40, 50, 60]), [30, 40]) // [30, 40]
