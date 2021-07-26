@@ -1,7 +1,7 @@
 /**
- * countLetters.js accepts a string as an argument
- * @param {string}} actual 
- * @return {object}
+ * countLetters.js accepts a string as an argument, returns an object with a tally of how many times a letter occurs in a string
+ * @param {string} string represents a string of characters
+ * @return {object} object with character tally
  */
 
 const countLetters = function(string) {
@@ -10,14 +10,14 @@ const countLetters = function(string) {
   for (const letter of string) {
     if (letter !== " ") {
       if (!countingObject[letter]) {
-      countingObject[letter] = 1;
+        countingObject[letter] = 1;
       } else {
-        countingObject[letter]++
+        countingObject[letter]++;
+      }
     }
   }
-  }
-  return countingObject
-}
+  return countingObject;
+};
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -27,7 +27,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const word = countLetters("Happy Harbour Comics")
+const word = countLetters("Happy Harbour Comics");
 
 assertEqual(word["H"], 2);
 assertEqual(word["a"], 2);
