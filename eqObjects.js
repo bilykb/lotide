@@ -6,14 +6,15 @@
 
 const eqObjects = function(object1, object2) {
 
-  if (Object.keys(object1).length !== Object.keys(object2)) {
+  if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   }
-  //return false
-  //loop through object1
-  // if property in object 1 !== object 2
-  // return false
-  //return return true
+  for (const key of Object.keys(object1)) {
+    if (object1[key] !== object2[key]) {
+      return false;
+    }
+  }
+    return true;
 }
 
 const assertEqual = function(actual, expected) {
@@ -26,7 +27,19 @@ const assertEqual = function(actual, expected) {
 
 const ab = { a : "1", b : "2" };
 const ba = { b : "2", a : "1" };
+const xy = { x : "3", y : "4" };
+const yx = { y : "5", x : "1" };
+const zx = { z : "3", x : "4" };
 assertEqual(eqObjects(ab, ba), true);
+assertEqual(eqObjects(xy, yx), false);
+assertEqual(eqObjects(xy, zx), false);
 
 const abc = { a : "1", b : "2", c : "3" };
 assertEqual(eqObjects(ab, abc), false)
+
+const cd = { c : "1", d : ["2", 3] };
+const dc = { d : ["2", 3], c : "1" };
+assertEqual(eqObjects(cd, dc), true);
+
+const cd2 = {c: "1", d: ["2", 3, 4] };
+assertEqual(eqObjects(cd, cd2), false);
