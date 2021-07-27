@@ -1,5 +1,5 @@
 /**
- * a function an accepts an object of television shows and their genre, and a string of a television show, then returns the genre if it is considered best in genre
+  * a function an searches for a key on an object where its value matches a given value
  * @param {object} objectOfGenres an object with a list of best shows by genre
  * @param {string} tvShow a string of a television show name
  * @return {keyof Object}
