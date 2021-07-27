@@ -6,6 +6,14 @@
 
 const eqObjects = function(object1, object2) {
 
+  if (Object.keys(object1).length !== Object.keys(object2)) {
+    return false;
+  }
+  //return false
+  //loop through object1
+  // if property in object 1 !== object 2
+  // return false
+  //return return true
 }
 
 const assertEqual = function(actual, expected) {
