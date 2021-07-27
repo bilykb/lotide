@@ -14,7 +14,7 @@ const eqObjects = function(object1, object2) {
       return false;
     }
   }
-    return true;
+  return true;
 }
 
 const assertEqual = function(actual, expected) {
@@ -24,18 +24,37 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+const eqArrays = function(arr1, arr2) {
 
-const ab = { a : "1", b : "2" };
-const ba = { b : "2", a : "1" };
-const xy = { x : "3", y : "4" };
-const yx = { y : "5", x : "1" };
-const zx = { z : "3", x : "4" };
-assertEqual(eqObjects(ab, ba), true);
-assertEqual(eqObjects(xy, yx), false);
-assertEqual(eqObjects(xy, zx), false);
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  for (let index = 0; index < arr1.length; index++) {
+    if (arr1[index] !== arr2[index]) {
+      return false;
+    }
+  }
+  return true;
+};
 
-const abc = { a : "1", b : "2", c : "3" };
-assertEqual(eqObjects(ab, abc), false)
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
+// const ab = { a : "1", b : "2" };
+// const ba = { b : "2", a : "1" };
+// const xy = { x : "3", y : "4" };
+// const yx = { y : "5", x : "1" };
+// const zx = { z : "3", x : "4" };
+// assertEqual(eqObjects(ab, ba), true);
+// assertEqual(eqObjects(xy, yx), false);
+// assertEqual(eqObjects(xy, zx), false);
+
+// const abc = { a : "1", b : "2", c : "3" };
+// assertEqual(eqObjects(ab, abc), false)
 
 const cd = { c : "1", d : ["2", 3] };
 const dc = { d : ["2", 3], c : "1" };
