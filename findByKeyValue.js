@@ -8,13 +8,11 @@
 const findKeyByValue = function(objectOfGenres, tvShow) {
   
   for (const genre in objectOfGenres) {
-    if (objectOfGenres.hasOwnProperty(genre)) {
-      if (objectOfGenres[genre] === tvShow) {
-        return genre
-      }
+    if (objectOfGenres[genre] === tvShow) {
+      return genre;
     }
   }
-}
+};
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -24,8 +22,8 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const bestTVShowsByGenre = { 
-  sci_fi: "The Expanse",
+const bestTVShowsByGenre = {
+  sciFi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
 };
@@ -33,6 +31,6 @@ const bestTVShowsByGenre = {
 assertEqual(findKeyByValue(bestTVShowsByGenre, "Simpsons"), undefined);
 assertEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"), "comedy");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sci_fi");
-
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sciFi");
+assertEqual(findKeyByValue(bestTVShowsByGenre, " "), undefined);
 
