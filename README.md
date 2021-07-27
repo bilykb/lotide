@@ -25,7 +25,7 @@
 | assertEqual.js | middle.js |
 | head.js | countOnly.js
 | tail.js | countLetters.js |
-| eqArrays.js |
+| eqArrays.js | findKeyByValue.js |
 | assertArraysEqual.js |
 | without.js |
 | flatten.js |
@@ -69,6 +69,10 @@
 
 [letterPositions.js](https://github.com/bilykb/lotide/blob/master/letterPositions.js)
 * a function that accepts a string of characters.  It then returns an object with an array for each character present
+
+[findByKeyValue.js](https://github.com/bilykb/lotide/blob/master/findByKeyValue.js)
+ * a function an searches for a key on an object where its value matches a given value
+
 
 ### <a name="week3">Week 3 Functions:</a>
 
