@@ -62,10 +62,13 @@
  * A function that accepts an array, and returns the middle index value(s) in a new array
 
 [countOnly.js](https://github.com/bilykb/lotide/blob/master/countOnly.js)
-* a function that accepts an array of names, and an object of names you wish to make a tally of.  Returns a new object with a name count.
+* a function that accepts an array of names, and an object of names you wish to make a tally of.  Returns a new object with a name count
 
 [countLetters.js](https://github.com/bilykb/lotide/blob/master/countLetters.js)
-* a function that accepts a string of characters.  It then returns an object with a tally of characters.
+* a function that accepts a string of characters.  It then returns an object with a tally of characters
+
+[letterPositions.js](https://github.com/bilykb/lotide/blob/master/letterPositions.js)
+* a function that accepts a string of characters.  It then returns an object with an array for each character present
 
 ### <a name="week3">Week 3 Functions:</a>
 
