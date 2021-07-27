@@ -6,7 +6,7 @@
  */
 
 const findKeyByValue = function(objectOfGenres, tvShow) {
-  
+
 }
 
 const assertEqual = function(actual, expected) {
@@ -17,5 +17,8 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+const bestTVShowsByGenre = { 
+  sci_fi: "The Expanse",
+  comedy: "Brooklyn Nine-Nine",
+  drama:  "The Wire"
+};
