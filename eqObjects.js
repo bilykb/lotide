@@ -1,27 +1,8 @@
 /**
- * eqObjects() is a function that compares two objects, and returns an Assertion pass or fail
+ * eqObjects.js a function which compares two objects to see if they are similar
  * @param {object} object1 
  * @param {object} object2 
  */
-
-const eqObjects = function(object1, object2) {
-
-  if (Object.keys(object1).length !== Object.keys(object2).length) {
-    return false;
-  }
-  
-  for (const key of Object.keys(object1)) {
-    if (typeof object1[key] === "object") {
-      if (!eqArrays(object1[key], object2[key])) {
-      return false;
-      }
-    } else if (object1[key] !== object2[key])
-      return false;
-  }
-  return true
-}
-
-
 
 const eqArrays = function(arr1, arr2) {
 
@@ -43,6 +24,30 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+
+const eqObjects = function(object1, object2) {
+  const listOfKeys1 = Object.keys(object1)
+  const listOfKeys2 = Object.keys(object2)
+
+  if (listOfKeys1.length !== listOfKeys2.length) {
+    return false;
+  }
+  
+  for (const key of Object.keys(object1)) {
+    const valueOfObject1 = object1[key];
+    const valueOfObject2 = object2[key];
+    
+    if (Array.isArray(valueOfObject1) || Array.isArray(valueOfObject2)) {
+      if (!eqArrays(valueOfObject1, valueOfObject2)) {
+      return false;
+      }
+    } else if (valueOfObject1 !== valueOfObject2)
+      return false;
+  }
+  return true
+}
+
+
 const ab = { a : "1", b : "2" };
 const ba = { b : "2", a : "1" };
 const xy = { x : "3", y : "4" };
@@ -61,7 +66,7 @@ const dc2 = { d : ["2", 3, 4], c : "1"  }
 const ae = { a : "1", e : ["2", 3, 4] }
 
 assertEqual(eqObjects(cd, dc), true);
-assertEqual(eqObjects(ab, abc), false)
-assertEqual(eqObjects(cd, cd2), false)
-assertEqual(eqObjects(ae, cd2), false)
-assertEqual(eqObjects(cd2, dc2), true)
+assertEqual(eqObjects(ab, abc), false);
+assertEqual(eqObjects(cd, cd2), false);
+assertEqual(eqObjects(ae, cd2), false);
+assertEqual(eqObjects(cd2, dc2), true);
