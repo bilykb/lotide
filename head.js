@@ -5,10 +5,10 @@
  */
 
 const head = function(array) {
-  if(array.length && array) {
-    return array[0]
+  if (array.length && array) {
+    return array[0];
   }
-  return undefined
+  return undefined;
 };
 
 const assertEqual = function(actual, expected) {
@@ -24,4 +24,4 @@ const assertEqual = function(actual, expected) {
 
 assertEqual(head([5, 6, 7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head([]), undefined)
+assertEqual(head([]), undefined);
