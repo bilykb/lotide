@@ -1,5 +1,5 @@
 /**
- * function assertObjectsEqual() takes two, parameters, the actual object, and the expected object, and returns an assertion passed or failed
+ * function assertObjectsEqual() takes two parameters, the actual object, and the expected object, and returns an assertion passed or failed
  * @param {object} actual
  * @param {object} expected
  */
