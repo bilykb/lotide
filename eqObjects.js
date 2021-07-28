@@ -1,7 +1,7 @@
 /**
  * eqObjects.js a function which compares two objects to see if they are similar
- * @param {object} object1 
- * @param {object} object2 
+ * @param {object} object1
+ * @param {object} object2
  */
 
 const eqArrays = function(arr1, arr2) {
@@ -26,8 +26,8 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqObjects = function(object1, object2) {
-  const listOfKeys1 = Object.keys(object1)
-  const listOfKeys2 = Object.keys(object2)
+  const listOfKeys1 = Object.keys(object1);
+  const listOfKeys2 = Object.keys(object2);
 
   if (listOfKeys1.length !== listOfKeys2.length) {
     return false;
@@ -39,13 +39,14 @@ const eqObjects = function(object1, object2) {
     
     if (Array.isArray(valueOfObject1) || Array.isArray(valueOfObject2)) {
       if (!eqArrays(valueOfObject1, valueOfObject2)) {
-      return false;
+        return false;
       }
-    } else if (valueOfObject1 !== valueOfObject2)
+    } else if (valueOfObject1 !== valueOfObject2) {
       return false;
+    }
   }
-  return true
-}
+  return true;
+};
 
 
 const ab = { a : "1", b : "2" };
@@ -62,8 +63,8 @@ const abc = { a : "1", b : "2", c : "3" };
 const cd = { c : "1", d : ["2", 3] };
 const dc = { d : ["2", 3], c : "1" };
 const cd2 = { c : "1", d : ["2", 3, 4] };
-const dc2 = { d : ["2", 3, 4], c : "1"  }
-const ae = { a : "1", e : ["2", 3, 4] }
+const dc2 = { d : ["2", 3, 4], c : "1"  };
+const ae = { a : "1", e : ["2", 3, 4] };
 
 assertEqual(eqObjects(cd, dc), true);
 assertEqual(eqObjects(ab, abc), false);
