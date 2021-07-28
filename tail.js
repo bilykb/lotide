@@ -20,3 +20,9 @@ assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words); // no need to capture the return value since we are not checking it
 assertEqual(words.length, 3); // original array should still have 3 elements!
+
+const example1 = tail([]);
+assertEqual(example1, []);
+
+const example2 = tail([1]);
+assertEqual(example2, []);
