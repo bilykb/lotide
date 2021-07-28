@@ -27,7 +27,7 @@
 | tail.js | countLetters.js |
 | eqArrays.js | findKeyByValue.js |
 | assertArraysEqual.js | eqObjects.js |
-| without.js |
+| without.js | assertObjectsEqual.js |
 | flatten.js |
 
 ---
@@ -74,7 +74,11 @@
  * a function an searches for a key on an object where its value matches a given value
 
 [eqObjects.js](https://github.com/bilykb/lotide/blob/master/eqObjects.js)
-*a function which compares two objects to see if they are similar
+* a function which compares two objects to see if they are similar
+
+[assertObjectsEqual.js]()
+ * function which takes two parameters, the actual object, and the expected object, and returns an assertion passed or failed
+
 
 ### <a name="week3">Week 3 Functions:</a>
 
