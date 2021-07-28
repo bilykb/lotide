@@ -1,7 +1,7 @@
 /**
  * function assertObjectsEqual()
- * @param {*} actual 
- * @param {*} expected 
+ * @param {object} actual
+ * @param {object} expected
  */
 
 
@@ -42,5 +42,10 @@ const eqObjects = function(object1, object2) {
 };
 
 const assertObjectsEqual = function(actual, expected) {
-  
-}
+
+  if (!eqObjects(actual, expected)) {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  } else {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  }
+};
