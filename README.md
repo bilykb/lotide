@@ -29,6 +29,7 @@
 | assertArraysEqual.js | eqObjects.js |
 | without.js | assertObjectsEqual.js |
 | flatten.js | map.js |
+| | takeUntil.js
 
 ---
 ## <b>Contents</b>
@@ -81,6 +82,10 @@
 
 [map.js](https://github.com/bilykb/lotide/blob/master/map.js)
  * this is a copy of the higher order map() method.  map() creates a new array populated with results of a callback function on every element in a specified array
+
+ [takeUntil.js](https://github.com/bilykb/lotide/blob/master/takeUntil.js)
+  * the function takeUntil() will collect items from a provided array until the callback function provided returns a truthy value
+
 
 ### <a name="week3">Week 3 Functions:</a>
 
