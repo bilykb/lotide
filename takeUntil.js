@@ -5,7 +5,7 @@
  * @param {function} callback the function that evokes per iteration
  */
 
- const eqArrays = function(arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
 
   if (arr1.length !== arr2.length) {
     return false;
@@ -31,16 +31,19 @@ const assertArraysEqual = function(arr1, arr2) {
 const takeUntil = function(array, callback) {
   const newArr = [];
   
-  for(let element of array) {
-    if(callback(element)) {
-      break
+  for (let element of array) {
+    if (callback(element)) {
+      return newArr;
     }
-    newArr.push(element)
+    newArr.push(element);
   }
-  return newArr;
 };
 
-
+// test code
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
-const results1 = takeUntil(data1, element => element < 0)
+const results1 = takeUntil(data1, element => element < 0);
 assertArraysEqual(results1, [1, 2, 5, 7, 2]);
+
+const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
+const results2 = takeUntil(data2, element => element === ',');
+assertArraysEqual(results2, ["I've", "been", "to", "Hollywood"]);
