@@ -30,6 +30,7 @@
 | without.js | assertObjectsEqual.js |
 | flatten.js | map.js |
 | | takeUntil.js
+| | findKey.js |
 
 ---
 ## <b>Contents</b>
@@ -86,8 +87,8 @@
  [takeUntil.js](https://github.com/bilykb/lotide/blob/master/takeUntil.js)
   * the function takeUntil() will collect items from a provided array until the callback function provided returns a truthy value
 
-[findKey.js]()
- * ths accepts accepts an object and callback function.  It iterates through the object and returns the first key for which the callback returns a truthy value. If not, returns undefined.
+[findKey.js](https://github.com/bilykb/lotide/blob/master/findKey.js)
+ * this function accepts an object and callback function.  It iterates through the object and returns the first key for which the callback returns a truthy value. If not, returns undefined.
 
 ### <a name="week3">Week 3 Functions:</a>
 
