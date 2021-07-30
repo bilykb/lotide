@@ -81,11 +81,13 @@
  * function which takes two parameters, the actual object, and the expected object, and returns an assertion passed or failed
 
 [map.js](https://github.com/bilykb/lotide/blob/master/map.js)
- * this is a copy of the higher order map() method.  map() creates a new array populated with results of a callback function on every element in a specified array
+ * this function is a copy of the higher order map() method.  map() creates a new array populated with results of a callback function on every element in a specified array
 
  [takeUntil.js](https://github.com/bilykb/lotide/blob/master/takeUntil.js)
   * the function takeUntil() will collect items from a provided array until the callback function provided returns a truthy value
 
+[findKey.js]()
+ * ths accepts accepts an object and callback function.  It iterates through the object and returns the first key for which the callback returns a truthy value. If not, returns undefined.
 
 ### <a name="week3">Week 3 Functions:</a>
 
