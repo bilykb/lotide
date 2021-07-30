@@ -12,7 +12,7 @@ const findKey = function(object, callback) {
       return key;
     }
   }
-}
+};
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
