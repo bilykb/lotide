@@ -1,5 +1,5 @@
 /**
- * this is a copy of the higher order map method.  map() creates a new array populated with results of a callback function on every element in a specified array
+ * this is a copy of the higher order map() method.  map() creates a new array populated with results of a callback function on every element in a specified array
  * @param {array} array accepts an array
  * @param {callback} callback callback function that changes original array
  * @returns new array
