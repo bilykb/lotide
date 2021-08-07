@@ -3,7 +3,6 @@
  * @param {array} array
  * @returns {array[0]} first element of array
  */
-const assertEqual = require('./assertEqual');
 
 const head = function(array) {
   if (array.length && array) {
