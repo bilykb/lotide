@@ -5,8 +5,6 @@
  * @return {keyof Object}
  */
 
-const { findByKeyValue } = require(".");
-
 const findKeyByValue = function(objectOfGenres, tvShow) {
   
   for (const genre in objectOfGenres) {
@@ -36,4 +34,4 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sciFi");
 assertEqual(findKeyByValue(bestTVShowsByGenre, " "), undefined);
 
-module.exports = findByKeyValue;
+module.exports = findKeyByValue;
