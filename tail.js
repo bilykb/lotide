@@ -1,6 +1,6 @@
 /**
  * tail removes the first index of the array, and returns the "tail" of the array
- * @param {array} array 
+ * @param {array} array
  * @returns array
  */
 
@@ -13,6 +13,6 @@ const tail = function(array) {
     return undefined;
   }
   return newArray;
-  }
+};
 
 module.exports = tail;
