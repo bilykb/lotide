@@ -5,7 +5,7 @@
  */
 
 const head = function(array) {
-  if (array.length && array) {
+  if (array.length && Array.isArray(array)) {
     return array[0];
   }
   return undefined;
