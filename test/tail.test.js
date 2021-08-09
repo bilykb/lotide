@@ -3,14 +3,19 @@ const assert = require('chai').assert;
 const tail = require("../tail")
 
 describe('#tail', () => {
-  it('should return result[0] as "Lighhouse"', () => {
-    const result = ['Hello', 'Lighthouse', 'Labs'];
+  it('should return ["Lighhouse", "Labs"]', () => {
+    const array = ['Hello', 'Lighthouse', 'Labs'];
 
-    assert.deepEqual(tail(result), ['Lighthouse', 'Labs']);
-  })
-})
+    assert.deepEqual(tail(array), ['Lighthouse', 'Labs']);
+  });
+  it('should return undefined if array is empty', () => {
+    const array = [];
 
+    assert.strictEqual(tail(array), undefined);
+  });
+  it('should return undefined if argument is not an array', () => {
+    const array = "5";
 
-
-// assertEqual(result[0], "Lighthouse");
-// assertEqual(result[1], "Labs");
+    assert.strictEqual(tail(array), undefined);
+  });
+});
