@@ -15,6 +15,6 @@ describe("#head", () => {
     assert.strictEqual(head([]), undefined);
   });
   it("returns undefined for '6'", () => {
-    assert.strictEqual(head('6'), undefined)
+    assert.strictEqual(head('6'), undefined);
   });
 });
