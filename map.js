@@ -58,3 +58,5 @@ assertArraysEqual(results4, ["number", "string", "number", "string", "number", "
 const objects = [{name: "Brett", age: "33"}, {name: "Sam", age: "30"}];
 const results5 = map(objects, user => user.name);
 assertArraysEqual(results5, ["Brett", "Sam"]);
+
+module.exports = map;

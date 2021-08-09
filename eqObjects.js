@@ -2,20 +2,10 @@
  * eqObjects.js a function which compares two objects to see if they are similar
  * @param {object} object1
  * @param {object} object2
+ * @return {boolean}
  */
 
-const eqArrays = function(arr1, arr2) {
-
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let index = 0; index < arr1.length; index++) {
-    if (arr1[index] !== arr2[index]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require("./eqArrays");
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -74,3 +64,5 @@ assertEqual(eqObjects(cd, cd2), false);
 assertEqual(eqObjects(ae, cd2), false);
 assertEqual(eqObjects(cd2, dc2), true);
 assertEqual(eqObjects(emp1, emp2), true);
+
+module.exports = eqObjects;

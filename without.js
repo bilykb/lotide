@@ -41,3 +41,5 @@ const assertArraysEqual = function(arr1, arr2) {
 
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
+
+module.exports = without;

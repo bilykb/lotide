@@ -42,3 +42,5 @@ assertEqual(word["C"], 1);
 assertEqual(word["m"], 1);
 assertEqual(word["i"], 1);
 assertEqual(word["s"], 1);
+
+module.exports = countLetters;
