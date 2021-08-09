@@ -1,6 +1,6 @@
 
 const assert = require('chai').assert;
-const tail = require("../tail")
+const tail = require("../tail");
 
 describe('#tail', () => {
   it('should return ["Lighhouse", "Labs"]', () => {
