@@ -19,6 +19,31 @@ describe("#countLetters", () => {
   });
   it("should return an object of letters to see how many instances of each letter in 'happy harbour'", () => {
     const word = countLetters("Happy Harbour Comics");
+
+    assert.deepEqual(word, {
+      h: 2,
+      a: 2,
+      p: 2,
+      y: 1,
+      r: 2,
+      b: 1,
+      o: 2,
+      u: 1,
+      c: 2,
+      m: 1,
+      i: 1,
+      s: 1
+    });
+  });
+  it('should throw and error if argument is not a string', () => {
+
+    assert.throw(() => {
+      countLetters(6);
+    });
+  });
+  it('should return an object if provided a string with too much white space', () => {
+
+    const word = countLetters("   Happy Harbour Comics    ");
     assert.deepEqual(word, {
       h: 2,
       a: 2,

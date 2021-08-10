@@ -7,6 +7,10 @@
 const countLetters = function(string) {
   const countingObject = {};
 
+  if (typeof string !== "string") {
+    throw new Error("Error Will Robinson!")
+  }
+
   for (const letter of string.toLowerCase()) {
     if (letter !== " ") {
       if (!countingObject[letter]) {
