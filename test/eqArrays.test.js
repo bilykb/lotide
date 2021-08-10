@@ -26,8 +26,16 @@ describe("#eqArrays", () => {
 
     assert.deepEqual(eqArrays([], []), true);
   });
-  it('should return undefined if either array is undefined', () => {
+  it('should throw an error if first argument is not an array', () => {
 
-    assert.deepEqual(eqArrays(undefined, []), undefined);
+    assert.throw(() => {
+      eqArrays("hello", [1, 2, 3])
+    });
+  });
+  it('should throw an error if second argument is not an array', () => {
+
+    assert.throw(() => {
+      eqArrays([1, 2, 3], "hello")
+    });
   });
 });
