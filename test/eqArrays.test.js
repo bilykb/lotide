@@ -1,8 +1,25 @@
-const eqArrays = require("../eqArrays")
-const assertEqual = require("../assertEqual")
+const assert = require('chai').assert;
+const eqArrays = require("../eqArrays");
+ 
+describe("#eqArrays", () => {
+  it('should return true when comparing the arrays [1, 2, 3] and [1, 2, 3]', () => {
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
-assertEqual(eqArrays(['1', '2', '3'], ['1', '2', '3', '4']), false);
+    assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 3]), true)
+  });
+  it('should return false when comparing [1, 2, 3] to ["1", "2", "3"]', () => {
+
+    assert.deepStrictEqual(eqArrays([1, 2, 3], ["1", "2", "3"]), false)
+  });
+  it('should return false when comparing [1, 2, 3] to [3, 2, 1', () => {
+
+    assert.deepEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
+  });
+  it('should return true when comparing ["1", "2", "3"] to ["1", "2", "3"]', () => {
+    
+    assert.deepEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
+  });
+  it('should return false when comparing [1, 2, 3, 4] to [1, 2, 3]', () => {
+
+    assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), false);
+  });
+});
