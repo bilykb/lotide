@@ -2,7 +2,7 @@
 # Lotide
 
 ###### A [Lighthouse Labs](https://www.lighthouselabs.ca/) project by [Brett Bilyk](https://github.com/bilykb)
-###### <span style="color:red">Note:  This document is under construction and subjet to change</span>
+###### <span style="color:red">Beware:  These functions were created while studying Web Development at Lighthouse Labs. Use at your own risk.</span>
 
 ---
 ## **What is Lotide?**
@@ -20,8 +20,8 @@
 ## **Table of Contents**
 ---
 
-| [Week 1 Functions](#week1) | [Week 2 Functions](#week2) | [Week 3 Functions](#week3) | [Week 4 Functions](#week4) |
-|--- | --- | --- | --- |
+| [Week 1 Functions](#week1) | [Week 2 Functions](#week2) |
+|--- | --- |
 | assertEqual.js | middle.js |
 | head.js | countOnly.js
 | tail.js | countLetters.js |
@@ -89,7 +89,3 @@
 
 [findKey.js](https://github.com/bilykb/lotide/blob/master/findKey.js)
  * this function accepts an object and callback function.  It iterates through the object and returns the first key for which the callback returns a truthy value. If not, returns undefined.
-
-### <a name="week3">Week 3 Functions:</a>
-
-### <a name="week4">Week 4 Functions:</a>
