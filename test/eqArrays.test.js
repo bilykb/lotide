@@ -22,4 +22,12 @@ describe("#eqArrays", () => {
 
     assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), false);
   });
+  it('should return true if both arrays are empty', () => {
+
+    assert.deepEqual(eqArrays([], []), true);
+  });
+  it('should return undefined if either array is undefined', () => {
+
+    assert.deepEqual(eqArrays(undefined, []), undefined);
+  });
 });

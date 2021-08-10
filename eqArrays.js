@@ -7,6 +7,9 @@
 
 const eqArrays = function(arr1, arr2) {
 
+  if (arr1 === undefined || arr2 === undefined) {
+    return undefined;
+  }
   if (arr1.length !== arr2.length) {
     return false;
   }
