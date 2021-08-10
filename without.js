@@ -8,11 +8,19 @@
 const without = function(arr, itemsToRemove) {
   let newArr = [];
 
-  arr.forEach(() => {
-    itemsToRemove.forEach((element2) => {
-      newArr = arr.filter(element1 => element1 !== element2);
-    });
+  
+  if (!Array.isArray(arr) || !Array.isArray(itemsToRemove)) {
+    throw new Error("Error Will Robinson!")
+  }
+  
+  if (itemsToRemove.length === 0) {
+    return arr;
+  }
+  
+  itemsToRemove.forEach((element2) => {
+    newArr = arr.filter(element1 => element1 !== element2);
   });
+
   return newArr;
 };
 
@@ -39,7 +47,7 @@ const assertArraysEqual = function(arr1, arr2) {
   return true;
 };
 
-assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
+assertArraysEqual(without([1, 2, 3], []), [1, 2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 
 module.exports = without;
