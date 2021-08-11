@@ -31,11 +31,11 @@ describe("#eqArrays", () => {
     assert.throw(() => {
       eqArrays("hello", [1, 2, 3])
     });
-  });
+  }, Error);
   it('should throw an error if second argument is not an array', () => {
 
     assert.throw(() => {
       eqArrays([1, 2, 3], "hello")
-    });
+    }, Error);
   });
 });
