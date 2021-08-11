@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@bilykb/lotide",
   "version": "1.0.0",
-  "description": "###### A [Lighthouse Labs](https://www.lighthouselabs.ca/) project by [Brett Bilyk](https://github.com/bilykb) ###### <span style=\"color:red\">Note:  This document is under construction and subjet to change</span>",
-  "main": "assertArraysEqual.js",
+  "description": "This repository contains all the functions created over the course of the Lotide project while studying at [Lighthouse Labs](https://www.lighthouselabs.ca/).",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
