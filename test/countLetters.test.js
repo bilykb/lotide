@@ -39,7 +39,7 @@ describe("#countLetters", () => {
 
     assert.throw(() => {
       countLetters(6);
-    });
+    }, Error);
   });
   it('should return an object if provided a string with too much white space', () => {
 
