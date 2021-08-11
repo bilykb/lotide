@@ -1,6 +1,7 @@
 
-# Lotide
-
+# Lotide 
+###### version 1.0.1
+---
 ###### A [Lighthouse Labs](https://www.lighthouselabs.ca/) project by [Brett Bilyk](https://github.com/bilykb)
 ###### <span style="color:red">**Beware:  These functions were created while studying Web Development at Lighthouse Labs and is _not_ intended for use in production-grade software. Use at your own risk.**</span>
 
