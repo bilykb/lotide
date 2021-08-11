@@ -8,7 +8,7 @@ describe("#without", () => {
   });
   it('should return the desired array when asked to remove [1, 2, "3"] from ["1", "2", "3"]', () => {
 
-    assert.deepEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"])
+    assert.deepEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
   });
   it('should remove no elements from [1, 2, 3] if provided []', () => {
 
