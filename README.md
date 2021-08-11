@@ -2,22 +2,22 @@
 # Lotide
 
 ###### A [Lighthouse Labs](https://www.lighthouselabs.ca/) project by [Brett Bilyk](https://github.com/bilykb)
-###### <span style="color:red">Beware:  These functions were created while studying Web Development at Lighthouse Labs. Use at your own risk.</span>
+###### <span style="color:red">**Beware:  These functions were created while studying Web Development at Lighthouse Labs and is _not_ intended for use in production-grade software. Use at your own risk.**</span>
 
 ---
-## **What is Lotide?**
+## What is Lotide?
 ---
 
 >Lotide is  a clone of the [Lodash](https://lodash.com) JavaScript library to practice creating various types of functions using JavaScript.
 
 ---
-## **Summary**
+## Summary
 ---
 
 >This repository contains all the functions created over the course of the Lotide project while studying at [Lighthouse Labs](https://www.lighthouselabs.ca/). Functions will be organized by the week of learning in which they were created, and referred to in order of creation.
 
 ---
-## **Usage**
+## Usage
 ---
 
 **Install it:** `npm install @bilykb/lotide`
@@ -27,7 +27,7 @@
 **Call it:** `const results = _.tail([1, 2, 3]) // => [2, 3]`
 
 ---
-## **Table of Contents**
+## Table of Contents
 ---
 
 | [Week 1 Functions](#week1) | [Week 2 Functions](#week2) |
@@ -43,7 +43,7 @@
 | | findKey.js |
 
 ---
-## <b>Contents</b>
+## Contents
 ---
 
 ### <a name="week1">Week 1 Functions:</a>
@@ -80,10 +80,10 @@
 * a function that accepts a string of characters.  It then returns an object with a tally of characters
 
 [letterPositions.js](https://github.com/bilykb/lotide/blob/master/letterPositions.js)
-* a function that accepts a string of characters.  It then returns an object with an array for each character present
+* a function that accepts a string of characters.  It then returns an object with an array for the index of each character present
 
 [findByKeyValue.js](https://github.com/bilykb/lotide/blob/master/findByKeyValue.js)
- * a function an searches for a key on an object where its value matches a given value
+ * a function that searches for a key in an object
 
 [eqObjects.js](https://github.com/bilykb/lotide/blob/master/eqObjects.js)
 * a function which compares two objects to see if they are similar
@@ -92,10 +92,10 @@
  * function which takes two parameters, the actual object, and the expected object, and returns an assertion passed or failed
 
 [map.js](https://github.com/bilykb/lotide/blob/master/map.js)
- * this function is a copy of the higher order map() method.  map() creates a new array populated with results of a callback function on every element in a specified array
+ * this function is a copy of the higher order map() method. map() creates a new array populated with results of a callback function on every element in a specified array
 
  [takeUntil.js](https://github.com/bilykb/lotide/blob/master/takeUntil.js)
   * the function takeUntil() will collect items from a provided array until the callback function provided returns a truthy value
 
 [findKey.js](https://github.com/bilykb/lotide/blob/master/findKey.js)
- * this function accepts an object and callback function.  It iterates through the object and returns the first key for which the callback returns a truthy value. If not, returns undefined.
+ * this function accepts an object and callback function. It iterates through the object and returns the first key for which the callback returns a truthy value. If not, returns undefined.
