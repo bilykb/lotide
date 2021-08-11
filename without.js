@@ -10,7 +10,7 @@ const without = function(arr, itemsToRemove) {
 
   
   if (!Array.isArray(arr) || !Array.isArray(itemsToRemove)) {
-    throw new Error("Error Will Robinson!")
+    throw new Error("Error Will Robinson!");
   }
   
   if (itemsToRemove.length === 0) {
