@@ -4,11 +4,11 @@ const eqArrays = require("../eqArrays");
 describe("#eqArrays", () => {
   it('should return true when comparing the arrays [1, 2, 3] and [1, 2, 3]', () => {
 
-    assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 3]), true)
+    assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
   });
   it('should return false when comparing [1, 2, 3] to ["1", "2", "3"]', () => {
 
-    assert.deepStrictEqual(eqArrays([1, 2, 3], ["1", "2", "3"]), false)
+    assert.deepStrictEqual(eqArrays([1, 2, 3], ["1", "2", "3"]), false);
   });
   it('should return false when comparing [1, 2, 3] to [3, 2, 1', () => {
 
@@ -29,13 +29,13 @@ describe("#eqArrays", () => {
   it('should throw an error if first argument is not an array', () => {
 
     assert.throw(() => {
-      eqArrays("hello", [1, 2, 3])
+      eqArrays("hello", [1, 2, 3]);
     });
   }, Error);
   it('should throw an error if second argument is not an array', () => {
 
     assert.throw(() => {
-      eqArrays([1, 2, 3], "hello")
+      eqArrays([1, 2, 3], "hello");
     }, Error);
   });
 });
