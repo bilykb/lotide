@@ -10,13 +10,14 @@ const takeUntil = function(array, callback) {
   
   if (!Array.isArray(array)) {
     throw new Error("Error Will Robinson!");
-  };
+  }
 
   if (array.length === 0) {
     return [];
-  }''
+  }
+
   for (let element of array) {
-    if(typeof element === "string") {
+    if (typeof element === "string") {
       element = element.trim();
     }
     if (callback(element)) {
