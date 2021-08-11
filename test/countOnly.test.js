@@ -124,6 +124,6 @@ describe("#countOnly", () => {
     ];
     assert.throw(() => {
       countOnly(firstNames, null);
-    });
+    }, Error);
   });
 });
