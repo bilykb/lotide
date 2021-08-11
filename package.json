@@ -1,6 +1,6 @@
 {
   "name": "@bilykb/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This repository contains all the functions created over the course of the Lotide project while studying at [Lighthouse Labs](https://www.lighthouselabs.ca/).",
   "main": "index.js",
   "directories": {
