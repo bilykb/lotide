@@ -38,4 +38,28 @@ describe("#eqObjects", () => {
 
     assert.deepEqual(eqObjects({}, {}), true);
   });
+  it('should return error if the first argument is not an object', () => {
+
+    assert.throw(() => {
+      eqObjects = ([1], [1])
+    }, Error);
+  });
+  it('should return error if the second argument is not an object', () => {
+
+    assert.throw(() => {
+      eqObjects = ({ c : "1", d : ["2", 3, 4] }, [1])
+    }, Error);
+  });
+  it('should return error if the first arguement is null', () => {
+
+    assert.throw(() => {
+      eqObjects = (null, { c : "1", d : ["2", 3, 4] });
+    }, Error);
+  });
+  it('should return error if the second arguement is null', () => {
+
+    assert.throw(() => {
+      eqObjects = ({ c : "1", d : ["2", 3, 4] }, null);
+    }, Error);
+  });
 });
