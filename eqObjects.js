@@ -12,13 +12,9 @@ const eqObjects = function(object1, object2) {
   const listOfKeys1 = Object.keys(object1);
   const listOfKeys2 = Object.keys(object2);
 
-  if (typeof object1 !== "object" || typeof object1 === null || Array.isArray(object1)) {
-    throw new Error("Error Will Robinson!");
-  };
-
   if (listOfKeys1.length !== listOfKeys2.length) {
     return false;
-  };
+  }
   
   for (const key of Object.keys(object1)) {
     const valueOfObject1 = object1[key];
