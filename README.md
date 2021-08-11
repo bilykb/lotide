@@ -8,13 +8,23 @@
 ## **What is Lotide?**
 ---
 
->Lotide is  a clone of the lodash JavaScript library to practice creating various types of functions using JavaScript.
+>Lotide is  a clone of the [Lodash](https://lodash.com) JavaScript library to practice creating various types of functions using JavaScript.
 
 ---
 ## **Summary**
 ---
 
 >This repository contains all the functions created over the course of the Lotide project while studying at [Lighthouse Labs](https://www.lighthouselabs.ca/). Functions will be organized by the week of learning in which they were created, and referred to in order of creation.
+
+---
+## **Usage**
+---
+
+**Install it:** `npm install @bilykb/lotide`
+
+**Require it:** `const _ = require('@bilykb/lotide');`
+
+**Call it:** `const results = _.tail([1, 2, 3]) // => [2, 3]`
 
 ---
 ## **Table of Contents**
