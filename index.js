@@ -30,4 +30,4 @@ module.exports = {
   tail,
   takeUntil,
   without
-}
+};
