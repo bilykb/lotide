@@ -5,11 +5,11 @@ describe("#takeUntil", () => {
   it('should return the array [1, 2, 5, 7, 2] when given [1, 2, 5, 7, 2, -1, 2, 4, 5]', () => {
     const data = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 
-    assert.deepEqual(takeUntil(data, element => element < 0), [1, 2, 5, 7, 2])
+    assert.deepEqual(takeUntil(data, element => element < 0), [1, 2, 5, 7, 2]);
   });
   it('should return an empty array when given an empty array', () => {
     
-    assert.deepEqual(takeUntil([], element => element < 0), [])
+    assert.deepEqual(takeUntil([], element => element < 0), []);
   });
   it('should return an error if provided anything but an array', () => {
 
