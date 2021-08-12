@@ -83,7 +83,7 @@
 [letterPositions.js](https://github.com/bilykb/lotide/blob/master/letterPositions.js)
 * a function that accepts a string of characters.  It then returns an object with an array for the index of each character present
 
-[findByKeyValue.js](https://github.com/bilykb/lotide/blob/master/findByKeyValue.js)
+[findByKeyValue.js](https://github.com/bilykb/lotide/blob/master/findKeyByValue.js)
  * a function that searches for a key in an object
 
 [eqObjects.js](https://github.com/bilykb/lotide/blob/master/eqObjects.js)
